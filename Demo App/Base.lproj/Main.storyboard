@@ -13,34 +13,50 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-Qt-7gq">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQA-zY-bjh">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Demo App" id="nHN-Q2-1eo">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="bDt-m9-Xvw"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="rewind" id="nC9-Oj-mJF"/>
+                                    <navigationItem title="Stopwatch" id="7Oh-IU-ry3">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="KcU-MJ-Qd8"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vsd-VB-u0i">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luj-yD-pfx">
+                                <rect key="frame" x="99" y="257" width="116" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="8UG-5D-tdl"/>
+                                    <constraint firstAttribute="width" constant="116" id="sMv-eT-loO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dB5-sl-TFt">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="save" id="ILb-0x-0ka"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="I9y-wq-jwg"/>
-                                    <barButtonItem systemItem="reply" id="9u3-mE-fN8"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fiU-vZ-5TO"/>
-                                    <barButtonItem systemItem="save" id="V9F-e9-bf7"/>
+                                    <barButtonItem systemItem="play" id="Deo-lD-Gbf"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1QT-2B-he1"/>
+                                    <barButtonItem systemItem="pause" id="MKV-s6-nBd"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aQA-zY-bjh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3lB-LO-pVU"/>
+                            <constraint firstAttribute="centerX" secondItem="luj-yD-pfx" secondAttribute="centerX" id="B1o-fS-Qgr"/>
+                            <constraint firstAttribute="centerY" secondItem="luj-yD-pfx" secondAttribute="centerY" id="KS0-F1-1aW"/>
+                            <constraint firstItem="aQA-zY-bjh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="YYS-zg-zri"/>
+                            <constraint firstAttribute="trailing" secondItem="aQA-zY-bjh" secondAttribute="trailing" id="Zjd-Yt-HYL"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="467" y="147"/>
         </scene>
     </scenes>
 </document>
