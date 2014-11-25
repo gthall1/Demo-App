@@ -20,7 +20,11 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Stopwatch" id="7Oh-IU-ry3">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="KcU-MJ-Qd8"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="KcU-MJ-Qd8">
+                                            <connections>
+                                                <action selector="reset:" destination="vXZ-lx-hvc" id="aXF-3m-oGt"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -43,7 +47,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1QT-2B-he1"/>
-                                    <barButtonItem systemItem="pause" id="MKV-s6-nBd"/>
+                                    <barButtonItem systemItem="pause" id="MKV-s6-nBd">
+                                        <connections>
+                                            <action selector="pause:" destination="vXZ-lx-hvc" id="kvL-L4-G4A"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -60,6 +68,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="time" destination="luj-yD-pfx" id="ZK7-Nk-Xwz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
